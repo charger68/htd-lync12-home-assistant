@@ -1,0 +1,7 @@
+{
+    "domain": "htd_lync6",
+    "name": "HTD Lync6 Series",
+    "dependencies": [],
+    "requirements": [],
+    "version": "1.0.0"
+}
