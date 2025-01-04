@@ -3,14 +3,16 @@ import logging
 _LOGGER = logging.getLogger(__name__)
 
 """Support for HTD Lync6 Series"""
-from homeassistant.components.media_player import PLATFORM_SCHEMA, MediaPlayerEntity
+# from homeassistant.components.media_player import PLATFORM_SCHEMA, MediaPlayerEntity
+from homeassistant.components.media_player import MediaPlayerEntity
 from homeassistant.components.media_player.const import (
-    SUPPORT_SELECT_SOURCE,
-    SUPPORT_TURN_OFF,
-    SUPPORT_TURN_ON,
-    SUPPORT_VOLUME_MUTE,
-    SUPPORT_VOLUME_SET,
+    # SUPPORT_SELECT_SOURCE,
+    # SUPPORT_TURN_OFF,
+    # SUPPORT_TURN_ON,
+    # SUPPORT_VOLUME_MUTE,
+    # SUPPORT_VOLUME_SET,
     #SUPPORT_VOLUME_STEP,
+    MediaPlayerEntityFeature
 )
 from homeassistant.const import (
     CONF_HOST,
@@ -24,12 +26,18 @@ from . import DOMAIN, CONF_ZONES
 from .htd_lync6 import HtdLync6Client, MAX_HTD_VOLUME
 
 SUPPORT_HTD_Lync6 = (
-    SUPPORT_SELECT_SOURCE
-    | SUPPORT_TURN_OFF
-    | SUPPORT_TURN_ON
-    | SUPPORT_VOLUME_MUTE
-    | SUPPORT_VOLUME_SET
-    #| SUPPORT_VOLUME_STEP
+    # SUPPORT_SELECT_SOURCE
+    # | SUPPORT_TURN_OFF
+    # | SUPPORT_TURN_ON
+    # | SUPPORT_VOLUME_MUTE
+    # | SUPPORT_VOLUME_SET
+    # #| SUPPORT_VOLUME_STEP
+    MediaPlayerEntityFeature.SELECT_SOURCE
+    | MediaPlayerEntityFeature.TURN_OFF
+    | MediaPlayerEntityFeature.TURN_ON
+    | MediaPlayerEntityFeature.VOLUME_MUTE
+    | MediaPlayerEntityFeature.VOLUME_SET
+    | MediaPlayerEntityFeature.VOLUME_STEP
 )
 
 
