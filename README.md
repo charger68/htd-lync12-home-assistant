@@ -53,6 +53,7 @@ htd_lync12:
 - March 9, 2021 - Intial Release
 - December 31, 2022 - Commented out Dict in Line 8 of init.py and updated the version requirement in manifest.json
 - January 2, 2022 - Updated instructions to add in restart before updating configuration.yaml
+- January 4, 2024 - Updated media_player.py to support Home Assistant 2025.1 MediaPlayerEntity
 
 
 ## Code Credits
