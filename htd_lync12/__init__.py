@@ -5,7 +5,7 @@ from homeassistant.core import HomeAssistant
 from homeassistant.helpers import config_validation as cv, discovery
 from homeassistant.const import CONF_HOST, CONF_PORT, CONF_PASSWORD, CONF_USERNAME
 import homeassistant.helpers.config_validation as cv
-from homeassistant.helpers.typing import ConfigType, Dict
+from homeassistant.helpers.typing import ConfigType
 
 from .htd_lync12 import DEFAULT_HTD_LYNC12_PORT, HtdLync12Client
 

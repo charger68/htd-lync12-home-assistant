@@ -5,7 +5,10 @@ This integration will add the HTD Lync12 into Home Assistant.
 ## Installation steps
 
 1. Download the 4 files (`__init__.py`, `htd_lync12.py`, `media_player.py`, `manifest.json`) from this repo and place them into your `custom_components/htd_lync12` folder.
-2. Update your configuration.yaml to include the following (NOTE: Only host is required).
+
+2. Restart home assistant. If you don't, and you update your configuration.yaml file first, you'll get an error ""Failed to restart Home Assistant. The system cannot restart because the configuration is not valid: Integration error: htd_lync12 - Integration ‘htd_lync12’ not found"
+
+3. Update your configuration.yaml to include the following (NOTE: Only host is required).
 ```yaml
 htd_lync12:
   - host: 192.168.1.133
@@ -48,6 +51,9 @@ htd_lync12:
 
 ## ChangeLog
 - March 9, 2021 - Intial Release
+- December 31, 2022 - Commented out Dict in Line 8 of init.py and updated the version requirement in manifest.json
+- January 2, 2022 - Updated instructions to add in restart before updating configuration.yaml
+- January 4, 2024 - Updated media_player.py to support Home Assistant 2025.1 MediaPlayerEntity
 
 
 ## Code Credits
