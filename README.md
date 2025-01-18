@@ -1,5 +1,8 @@
 # HTD Lync12 Series integration for Home Assistant
 
+January 18th, 2025 Update: Please use this integration instead: https://github.com/hikirsch/htd-home-assistant
+
+
 This integration will add the HTD Lync12 into Home Assistant.
 
 ## Installation steps
